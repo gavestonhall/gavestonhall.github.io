@@ -57,11 +57,11 @@ header li {
   padding: 0px 20px 0px 20px;
 }
 
-header #branding {
+header .branding {
   float: left;
 }
 
-header #branding h1 {
+header .branding h1 {
   padding-right: 20px;
   margin: 0;
   display: inline;
@@ -124,6 +124,19 @@ header .fa {
   margin-top: 1%;
 }
 
+/* Footer */
+footer {
+  font-family: Helvetica, sans-serif;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #0f0f0f;
+}
+
+/* Mobile */
 @media (max-width: 1080px) {
   #google-bar img {
     width: 80%;

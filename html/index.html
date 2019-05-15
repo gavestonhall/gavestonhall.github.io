@@ -24,7 +24,7 @@
     />
 
     <!-- My own CSS file-->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../css/mainstyle.css" />
 
     <title>gavestonhall | Welcome!</title>
   </head>
@@ -41,29 +41,7 @@
           </div>
         </div>
         <div id="clockbox"></div>
-
-          <script type="text/javascript">
-          var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-          function GetClock(){
-          var d=new Date();
-          var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-
-          var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-          if(nhour==0){ap=" AM";nhour=12;}
-          else if(nhour<12){ap=" AM";}
-          else if(nhour==12){ap=" PM";}
-          else if(nhour>12){ap=" PM";nhour-=12;}
-
-          if(nmin<=9) nmin="0"+nmin;
-
-          var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
-          document.getElementById('clockbox').innerHTML=clocktext;
-          }
-
-          GetClock();
-          setInterval(GetClock,1000);
-          </script>
+        <script type="text/javascript" src="../js/clock.js"></script>
 
         <nav>
           <ul>
@@ -85,9 +63,11 @@
       </div>
     </section>
 
+    
     <footer>
-     Developed by: gavestonhall
+      Developed by: gavestonhall
     </footer>
+    
         
 
     <!-- Optional JavaScript -->

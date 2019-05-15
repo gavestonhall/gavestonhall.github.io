@@ -124,7 +124,7 @@ header .fa {
   margin-top: 1%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   #google-bar img {
     width: 80%;
     margin: auto;

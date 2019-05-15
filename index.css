@@ -137,6 +137,7 @@ header .fa {
 
   header h1 {
     clear: both;
+    text-align: center;
     display: block;
   }
 

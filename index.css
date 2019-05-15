@@ -73,6 +73,7 @@ header #clockbox {
   text-align: center;
   font-size: 20px;
   padding-left: 5%;
+  box-sizing: border-box;
 }
 
 header nav {
@@ -136,15 +137,17 @@ header .fa {
 
   header h1 {
     clear: both;
+    display: block;
   }
 
-  header h1 {
-    display: block;
+  header ul {
+    text-align: center;
   }
 
   header .socials {
     width: 100%;
     display: block;
+    text-align: center;
   }
 
   header #clockbox {

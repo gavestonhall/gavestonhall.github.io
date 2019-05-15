@@ -1,3 +1,12 @@
+/* Reset */
+/*
+* {
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+/* Global */
 body {
   font: 15px/1.5 Helvetica, Arial, sans-serif;
   padding: 0;
@@ -5,7 +14,6 @@ body {
   background-color: #323232;
 }
 
-/* Global */
 .container {
   width: 80%;
   margin: auto;
@@ -40,6 +48,10 @@ header a {
   font-size: 16px;
 }
 
+header .socials {
+  display: inline;
+}
+
 header li {
   display: inline;
   padding: 0px 20px 0px 20px;
@@ -58,12 +70,14 @@ header #branding h1 {
 header #clockbox {
   color: white;
   display: inline;
-  padding-left: 5%;
+  text-align: center;
   font-size: 20px;
+  padding-left: 5%;
 }
 
 header nav {
   float: right;
+  display: inline;
 }
 
 header .current a {
@@ -89,20 +103,53 @@ header .fa {
 /* Google */
 #google-bar img {
   display: block;
-  margin-left: 40%;
+  margin: auto;
   margin-top: 10%;
 }
 
 #google-bar input {
   display: block;
-  margin-left: 32%;
-  padding: 5px 10px 5px 10px;
+  width: 80%;
+  padding: 5px;
   border-radius: 20px;
   border: 2px solid darkgrey;
+  margin: auto;
+  color: black;
 }
 
 #google-bar button {
-  margin-left: 50%;
-  padding: 5px 10px;
+  display: block;
+  margin: auto;
   margin-top: 1%;
+}
+
+@media (max-width: 768px) {
+  #google-bar img {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  header nav {
+    float: none;
+  }
+
+  header h1 {
+    clear: both;
+  }
+
+  header h1 {
+    display: block;
+  }
+
+  header .socials {
+    width: 100%;
+    display: block;
+  }
+
+  header #clockbox {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
 }

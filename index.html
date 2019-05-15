@@ -3,11 +3,13 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="gavestonhall's personal website" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="keywords"
+      content="gavestonhall, github, website, personal, official"
     />
-
+    <meta name="author" content="gavestonhall" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -25,27 +27,62 @@
     <!-- My own CSS file-->
     <link rel="stylesheet" href="./index.css" />
 
-    <title>gavestonhall's Website</title>
+    <title>gavestonhall | Welcome!</title>
   </head>
   <body>
-    <div class="nav-section">
-      <nav>
-        <a href="./index.html" class="nav-element">Home</a>
-        <a href="./projects.html" class="nav-element">Projects</a>
-        <a href="./about_me.html" class="nav-element">About me</a>
-        <div class="social-media">
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>gavestonhall</h1>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-steam"></a>
           <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-linkedin"></a>
         </div>
-      </nav>
-      <div class="google-bar">
-        <form method="get" action="https://www.google.com/search">
-          <p>Search Google</p>
-          <input type="text" name="q" size="31" value="" />
+        <div id="clockbox"></div>
+
+          <script type="text/javascript">
+          var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+          function GetClock(){
+          var d=new Date();
+          var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+          var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+          if(nhour==0){ap=" AM";nhour=12;}
+          else if(nhour<12){ap=" AM";}
+          else if(nhour==12){ap=" PM";}
+          else if(nhour>12){ap=" PM";nhour-=12;}
+
+          if(nmin<=9) nmin="0"+nmin;
+
+          var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+          document.getElementById('clockbox').innerHTML=clocktext;
+          }
+
+          GetClock();
+          setInterval(GetClock,1000);
+          </script>
+
+        <nav>
+          <ul>
+            <li class="current"><a href="./index.html" class="nav-element">Home</a></li>
+            <li><a href="./projects.html" class="nav-element">Projects</a></li>
+            <li><a href="./about_me.html" class="nav-element">About me</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+
+    <section id="google-bar">
+      <div class="container">
+        <form method="GET" action="https://www.google.com/search">
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" />
+          <input type="text" name="q" size="50" value="" />
+          <button type="submit" class="button_1">Search</button>
         </form>
       </div>
-    </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -107,7 +107,6 @@ header #clockbox {
 }
 
 header nav {
-  float: right;
   display: inline;
 }
 
@@ -140,9 +139,11 @@ header .fa {
 #google-bar input {
   display: block;
   width: 80%;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 20px;
   border: 2px solid darkgrey;
+  text-indent: 10px;
   margin: auto;
   color: black;
 }

@@ -1,11 +1,3 @@
-/* Reset */
-/*
-* {
-  margin: 0px;
-  padding: 0px;
-}
-*/
-
 /* Global */
 body {
   font: 15px/1.5 Helvetica, Arial, sans-serif;
@@ -22,7 +14,6 @@ body {
   min-height: 100%;
   margin: auto;
   overflow: hidden;
-  position: relative;
 }
 
 ul {
@@ -32,7 +23,7 @@ ul {
 
 .button_1 {
   background-color: #00e6e6;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 10px 0px 10px;
   color: #000000;
   border: none;
 }
@@ -66,9 +57,8 @@ header {
   background-color: #0f0f0f;
   color: #ffffff;
   padding-top: 30px;
-  min-height: 70px;
+  min-height: 90px;
   border-bottom: #00e6e6 3px solid;
-  width: 100%;
 }
 
 header a {
@@ -84,7 +74,7 @@ header .socials {
 
 header li {
   display: inline;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 10px;
 }
 
 header .branding {
@@ -101,14 +91,13 @@ header #clockbox {
   color: white;
   display: inline;
   text-align: center;
-  font-size: 20px;
-  padding-left: 5%;
-  box-sizing: border-box;
+  font-size: 1.3em;
+  margin-left: 5%;
 }
 
 header nav {
-  display: inline;
   float: right;
+  display: inline;
 }
 
 header .current a {
@@ -133,14 +122,15 @@ header .fa {
 /* Google */
 #google-bar img {
   display: block;
-  margin: auto;
+  width: 65%;
+  padding-left: 35%;
   margin-top: 10%;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 
 #google-bar input {
   display: block;
-  width: 80%;
+  width: 90%;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
@@ -153,27 +143,40 @@ header .fa {
 
 #google-bar button {
   display: block;
-  margin: auto;
-  margin-top: 1%;
+  margin: 2% auto;
+  padding: 5px 10px;
 }
 
 /* Footer */
-footer {
+footer#noscroll {
   font-family: Helvetica, sans-serif;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  text-align: center;
   bottom: 0;
+  color: #fff;
+  background-color: #0f0f0f;
+}
+
+footer#scrolling {
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  position: relative;
   text-align: center;
   color: #fff;
   background-color: #0f0f0f;
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #google-bar img {
-    width: 40%;
-    margin: auto;
-    margin-top: 10%;
+    margin-top: 25%;
+    width: 80%;
+    padding-left: 25%;
+  }
+
+  header nav li {
+    display: block;
   }
 
   header nav {
@@ -184,6 +187,22 @@ footer {
     clear: both;
     text-align: center;
     display: block;
+  }
+
+  .container .branding {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1320px) {
+  #google-bar img {
+    margin-top: 15%;
+  }
+
+  header nav {
+    float: none;
   }
 
   header ul {
@@ -199,11 +218,12 @@ footer {
   header #clockbox {
     clear: both;
     display: block;
-    width: 100%;
+    width: 90%;
   }
 
   .container .branding {
     float: none;
+    display: block;
     text-align: center;
   }
 }

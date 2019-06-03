@@ -198,7 +198,7 @@ footer#scrolling {
 /* Tablet */
 @media only screen and (max-width: 1320px) {
   #google-bar img {
-    margin-top: 15%;
+    margin-top: 13%;
   }
 
   header nav {

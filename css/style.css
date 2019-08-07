@@ -79,6 +79,7 @@ header li {
 
 header .branding {
   float: left;
+  color: rgb(185, 26, 26);
 }
 
 header .branding h1 {

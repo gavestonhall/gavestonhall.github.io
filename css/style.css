@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   /*background-color: #323232;*/
-  background: #414141;
+  background: #d8d8d8;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -22,7 +22,7 @@ ul {
 }
 
 .button_1 {
-  background-color: #00e6e6;
+  background-color: rgb(185, 26, 26);
   padding: 0px 10px 0px 10px;
   color: #000000;
   border: none;
@@ -33,7 +33,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #00e6e6;
+  border: 3px solid rgb(185, 26, 26);
 }
 
 .box-1 {
@@ -44,11 +44,11 @@ ul {
   color: #fff;
 }
 
-.box-1 h1 {
-  color: #00e6e6;
+.box-1 h2 {
+  color: rgb(185, 26, 26);
   padding: 0px;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 24px;
   text-transform: bold;
 }
 
@@ -58,7 +58,7 @@ header {
   color: #ffffff;
   padding-top: 30px;
   min-height: 90px;
-  border-bottom: #00e6e6 3px solid;
+  border-bottom: rgb(185, 26, 26) 3px solid;
 }
 
 header a {
@@ -101,13 +101,12 @@ header nav {
 }
 
 header .current a {
-  color: #00e6e6;
+  color: rgb(185, 26, 26);
   font-weight: bold;
-  text-decoration: underline;
 }
 
 header a:hover {
-  color: #00e6e6;
+  color: rgb(185, 26, 26);
 }
 
 header .fa:hover {
@@ -122,8 +121,8 @@ header .fa {
 /* Google */
 #google-bar img {
   display: block;
-  width: 65%;
-  padding-left: 35%;
+  width: 30%;
+  margin-left: 35%;
   margin-top: 10%;
   margin-bottom: 10px;
 }
@@ -135,7 +134,7 @@ header .fa {
   padding-bottom: 5px;
   border-radius: 20px;
   background: black;
-  border: 2px solid #00e6e6;
+  border: 2px solid rgb(185, 26, 26);
   text-indent: 10px;
   margin: auto;
   color: #fff;
@@ -143,19 +142,21 @@ header .fa {
 
 #google-bar button {
   display: block;
+  border-radius: 20px;
   margin: 2% auto;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 /* Footer */
 footer#noscroll {
   font-family: Helvetica, sans-serif;
   width: 100%;
-  position: fixed;
   text-align: center;
-  bottom: 0;
   color: #fff;
   background-color: #0f0f0f;
+  position: fixed;
+  bottom: 0;
 }
 
 footer#scrolling {
@@ -171,8 +172,8 @@ footer#scrolling {
 @media only screen and (max-width: 768px) {
   #google-bar img {
     margin-top: 25%;
-    width: 80%;
-    padding-left: 25%;
+    width: 45%;
+    margin-left: 25%;
   }
 
   header nav li {

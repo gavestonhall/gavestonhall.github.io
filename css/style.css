@@ -1,19 +1,7 @@
 /* Global */
 body {
   font: 15px/1.5 Helvetica, Arial, sans-serif;
-  padding: 0;
-  margin: 0;
-  /*background-color: #323232;*/
   background: #d8d8d8;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container {
-  width: 80%;
-  min-height: 100%;
-  margin: auto;
-  overflow: hidden;
 }
 
 ul {
@@ -40,7 +28,7 @@ ul {
   font-family: Helvetica, Arial, sans-serif;
   margin: 10px;
   padding: 5px 10px 1px 10px;
-  background-color: #0f0f0f;
+  background-color: #1b1b1b;
   color: #fff;
 }
 
@@ -54,7 +42,7 @@ ul {
 
 /* Header */
 header {
-  background-color: #0f0f0f;
+  background-color: #1b1b1b;
   color: #ffffff;
   padding-top: 30px;
   min-height: 90px;
@@ -84,6 +72,7 @@ header .branding {
 
 header .branding h1 {
   padding-right: 20px;
+  font-size: 30px;
   margin: 0;
   display: inline;
 }
@@ -129,43 +118,49 @@ header .fa {
 }
 
 #google-bar input {
-  display: block;
-  width: 90%;
+  display: inline-block;
+  width: 80%;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
-  background: black;
+  background: #1b1b1b;
   border: 2px solid rgb(185, 26, 26);
   text-indent: 10px;
-  margin: auto;
   color: #fff;
 }
 
 #google-bar button {
-  display: block;
+  display: inline-block;
   border-radius: 20px;
-  margin: 2% auto;
   padding: 10px 20px;
   font-weight: bold;
 }
 
-/* Footer */
-footer#noscroll {
-  font-family: Helvetica, sans-serif;
-  width: 100%;
+#searchbar {
+  display: inline;
   text-align: center;
-  color: #fff;
-  background-color: #0f0f0f;
-  position: fixed;
-  bottom: 0;
 }
 
-footer#scrolling {
-  font-family: Helvetica, sans-serif;
-  width: 100%;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
   position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 25px;
+}
+.footer {
+  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  color: #fff;
+  /* Set the fixed height of the footer here */
+  height: 25px;
+  color: #f3f3f3;
+  border-top: rgb(185, 26, 26);
   background-color: #0f0f0f;
 }
 
@@ -194,6 +189,15 @@ footer#scrolling {
   .container .branding {
     float: none;
     text-align: center;
+  }
+
+  #searchbar input {
+    width: 100%;
+  }
+
+  #searchbar button {
+    display: block;
+    margin: 10px auto;
   }
 }
 
